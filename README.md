@@ -6,6 +6,7 @@
 
 ## 技术栈
 
+<<<<<<< HEAD
 - **检测框架**：YOLOv8（ultralytics）
 - **标注工具**：Label Studio
 - **编程语言**：Python
@@ -60,6 +61,12 @@ yolo predict model=runs/detect/train-2/weights/best.pt source=test.jpg save=True
 ```bash
 yolo predict model=runs/detect/train-2/weights/best.pt source=test.mp4 save=True conf=0.3
 ```
+=======
+- 检测框架：YOLOv8（ultralytics）
+- 标注工具：Label Studio
+- 编程语言：Python
+- 开发工具：VS Code
+>>>>>>> 362ccbf4992631f69f13de2ef639c2575b6ee1fb
 
 ## 模型性能
 
@@ -70,6 +77,7 @@ yolo predict model=runs/detect/train-2/weights/best.pt source=test.mp4 save=True
 | Recall | 100% |
 | 训练集 | 32张 |
 | 验证集 | 8张 |
+<<<<<<< HEAD
 | 训练轮数 | 50 epochs |
 
 ## 项目流程
@@ -79,11 +87,54 @@ yolo predict model=runs/detect/train-2/weights/best.pt source=test.mp4 save=True
 3. **数据分割**：将数据集按 80:20 比例分为训练集和验证集
 4. **模型训练**：基于 YOLOv8n 预训练模型进行迁移学习
 5. **模型测试**：使用新图片和视频验证检测效果
+=======
+
+## 使用方法
+
+### 训练模型
+```bash
+
+### 检测图片
+```bash
+
+### 检测视频
+```bash
+
+
+
+
+## 项目流程
+
+1. 数据采集：下载猪的图片
+2. 数据标注：使用 Label Studio 框选猪的区域
+3. 数据分割：80%训练集，20%验证集
+4. 模型训练：基于 YOLOv8n 迁移学习
+5. 模型测试：验证检测效果
+>>>>>>> 362ccbf4992631f69f13de2ef639c2575b6ee1fb
 
 ## 改进方向
 
 - 增加训练数据量（目标 200+ 张）
 - 使用更大的模型（yolov8s/yolov8m）
 - 增加训练轮数（100-200 epochs）
+<<<<<<< HEAD
 - 添加数据增强（mosaic、flipud）
 - 扩展检测类别（如猪的不同姿态）
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 362ccbf4992631f69f13de2ef639c2575b6ee1fb
